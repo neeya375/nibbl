@@ -1,0 +1,11 @@
+server:
+	nodejs + express
+database:
+	mongodb with nodejs driver
+
+What saar needs to install:
+	NodeJS. also please make sure it is in the global system/path variables
+NPM (tho it usually comes with nodejs so dont worry)
+
+prompt:
+The project is a small one about feedback putting for some restaurants. Help the prompters who I gave this 

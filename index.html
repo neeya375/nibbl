@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find your next Bangalore restaurant by cuisine, neighbourhood, budget, and atmosphere with Nibbl.">
+    <meta name="theme-color" content="#f6f3e4" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1c211b" media="(prefers-color-scheme: dark)">
+    <title>Nibbl | Find a little something lovely</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<div id="loader">
+    <div class="loader-content">
+        <div class="logo-loader">
+            <img src="nibbl_logo.png" alt="Nibbl Logo">
+        </div>
+        <div class="loader-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+        <p>Discovering deliciousness…</p>
+    </div>
+</div>
+
+<header>
+    <a class="logo" href="#home" aria-label="Nibbl home">
+        <img src="nibbl_logo.png" alt="Nibbl Logo">
+    </a>
+
+    <nav aria-label="Main navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#cuisine-showcase">Cuisines</a>
+        <a href="#finder">Find</a>
+        <a href="#favorites">Favourites</a>
+        <a href="#ratings">Reviews</a>
+        <a href="#feedback">Feedback</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button id="themeBtn" type="button" aria-label="Switch to light mode">☼</button>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-blob hero-blob--one" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob--two" aria-hidden="true"></div>
+
+    <div class="hero-content">
+        <span class="eyebrow">Bengaluru’s friendliest food guide</span>
+        <h1>Turning <em>cravings</em><br>into choices</h1>
+        <p>
+            Good food, good company, and a little less time deciding. Find your next Bangalore spot by craving,
+            neighbourhood, and the kind of evening you have in mind.
+        </p>
+        <div class="hero-actions">
+            <a class="btn btn-primary" href="#finder">Find your table <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost" href="#cuisine-showcase">Browse cuisines</a>
+        </div>
+        <p class="hero-note">a small guide to the many flavours of Bengaluru</p>
+    </div>
+
+    <div class="hero-art">
+        <div class="hero-photo-wall" id="heroPhotoWall" aria-label="A peek at Bengaluru's restaurants"></div>
+    </div>
+</section>
+
+<section class="how-it-works" id="how-it-works">
+    <span class="eyebrow">Four little steps</span>
+    <h2>How it works</h2>
+    <div class="steps">
+        <div class="step">
+            <span class="step-icon" aria-hidden="true">🍽️</span>
+            <h3>Choose cuisine</h3>
+            <p>Select from a variety of cuisines including Italian, North Indian, Korean, and more.</p>
+        </div>
+        <div class="step">
+            <span class="step-icon" aria-hidden="true">📍</span>
+            <h3>Pick an area</h3>
+            <p>Choose your preferred dining area across Bangalore.</p>
+        </div>
+        <div class="step">
+            <span class="step-icon" aria-hidden="true">🕯️</span>
+            <h3>Set the ambience</h3>
+            <p>Pick the perfect vibe — cozy, romantic, rooftop, or fine dine.</p>
+        </div>
+        <div class="step">
+            <span class="step-icon" aria-hidden="true">✨</span>
+            <h3>Enjoy!</h3>
+            <p>Discover your perfect restaurant and enjoy an amazing meal.</p>
+        </div>
+    </div>
+</section>
+
+<section class="stats-section" id="stats">
+    <h2 class="sr-only">Nibbl by numbers</h2>
+    <div class="stats-grid">
+        <div class="stat-item"><h3 class="counter" id="restaurantCount">—</h3><p>Places to explore</p></div>
+        <div class="stat-item"><h3 class="counter" id="cuisineCount">—</h3><p>Cuisine styles</p></div>
+        <div class="stat-item"><h3 class="counter" id="areaCount">—</h3><p>Neighbourhoods</p></div>
+        <div class="stat-item"><h3 class="counter">∞</h3><p>Ways to enjoy</p></div>
+    </div>
+</section>
+
+<section class="featured" id="featured">
+    <span class="eyebrow">Hand-picked</span>
+    <h2>Places worth a look</h2>
+    <div id="featuredContainer"></div>
+</section>
+
+<section class="cuisine-showcase" id="cuisine-showcase">
+    <span class="eyebrow">What are you craving?</span>
+    <h2>Browse by cuisine</h2>
+    <div class="cuisine-grid">
+        <div class="cuisine-card" data-cuisine="Italian" role="button" tabindex="0">
+            <span class="cuisine-emoji">🍝</span>
+            <h3>Italian</h3>
+        </div>
+        <div class="cuisine-card" data-cuisine="North Indian" role="button" tabindex="0">
+            <span class="cuisine-emoji">🍛</span>
+            <h3>North Indian</h3>
+        </div>
+        <div class="cuisine-card" data-cuisine="Chinese" role="button" tabindex="0">
+            <span class="cuisine-emoji">🥡</span>
+            <h3>Chinese</h3>
+        </div>
+        <div class="cuisine-card" data-cuisine="Korean" role="button" tabindex="0">
+            <span class="cuisine-emoji">🍲</span>
+            <h3>Korean</h3>
+        </div>
+        <div class="cuisine-card" data-cuisine="Japanese" role="button" tabindex="0">
+            <span class="cuisine-emoji">🍣</span>
+            <h3>Japanese</h3>
+        </div>
+        <div class="cuisine-card" data-cuisine="Cafe" role="button" tabindex="0">
+            <span class="cuisine-emoji">☕</span>
+            <h3>Cafe</h3>
+        </div>
+        <div class="cuisine-card" data-cuisine="Desserts" role="button" tabindex="0">
+            <span class="cuisine-emoji">🍰</span>
+            <h3>Desserts</h3>
+        </div>
+        <div class="cuisine-card" data-cuisine="American" role="button" tabindex="0">
+            <span class="cuisine-emoji">🍔</span>
+            <h3>American</h3>
+        </div>
+        <div class="cuisine-card" data-cuisine="Mexican" role="button" tabindex="0">
+            <span class="cuisine-emoji">🌮</span>
+            <h3>Mexican</h3>
+        </div>
+        <div class="cuisine-card" data-cuisine="Bar" role="button" tabindex="0">
+            <span class="cuisine-emoji">🍸</span>
+            <h3>Bar</h3>
+        </div>
+        <div class="cuisine-card" data-cuisine="Mediterranean" role="button" tabindex="0">
+            <span class="cuisine-emoji">🫒</span>
+            <h3>Mediterranean</h3>
+        </div>
+        <div class="cuisine-card" data-cuisine="Italian/French" role="button" tabindex="0">
+            <span class="cuisine-emoji">🥐</span>
+            <h3>Italian/French</h3>
+        </div>
+    </div>
+</section>
+
+<section class="finder" id="finder">
+    <span class="eyebrow">The fun part</span>
+    <h2>Find restaurants</h2>
+    <p class="section-intro">Tell us what sounds good. We’ll take it from there.</p>
+
+    <div class="filters">
+        <label class="sr-only" for="searchInput">Search restaurants</label>
+        <input type="search" id="searchInput" placeholder="Search a place, cuisine, or area">
+
+        <select id="cuisine">
+
+        <option value="">Cuisine</option>
+        <option>Italian</option>
+        <option>North Indian</option>
+        <option>South Indian</option>
+        <option>Chinese</option>
+        <option>Japanese</option>
+        <option>Korean</option>
+        <option>Continental</option>
+        <option>Cafe</option>
+        <option>Desserts</option>
+        <option>Multi-cuisine</option>
+        <option>American</option>
+        <option>Mexican</option>
+        <option>Bar</option>
+        <option>Mediterranean</option>
+        <option>Italian/French</option>
+
+        </select>
+
+        <select id="area">
+
+        <option value="">Area</option>
+        <option>Indiranagar</option>
+        <option>Koramangala</option>
+        <option>MG Road</option>
+        <option>Ashok Nagar</option>
+        <option>Whitefield</option>
+        <option>HSR Layout</option>
+        <option>JP Nagar</option>
+        <option>Jayanagar</option>
+        <option>Marathahalli</option>
+        <option>Hebbal</option>
+        <option>UB City</option>
+        <option>Sarjapur Road</option>
+        <option>Rajajinagar</option>
+        <option>Yelahanka</option>
+        <option>BTM Layout</option>
+        <option>Cunningham Road</option>
+        <option>Domlur</option>
+        <option>Hennur</option>
+        <option>Bangalore</option>
+        <option>Church Street</option>
+        <option>Mahadevapura</option>
+        <option>Jeevan Bhima Nagar</option>
+
+        </select>
+
+        <select id="ambience">
+
+        <option value="">Ambience</option>
+        <option>Casual</option>
+        <option>Cozy</option>
+        <option>Rooftop</option>
+        <option>Family</option>
+        <option>Romantic</option>
+        <option>Luxury</option>
+        <option>Brewery</option>
+
+        </select>
+
+        <select id="price">
+            <option value="">Any budget</option>
+            <option value="₹">Budget friendly · ₹</option>
+            <option value="₹₹">Mid-range · ₹₹</option>
+            <option value="₹₹₹">A little fancy · ₹₹₹</option>
+        </select>
+
+        <select id="sort">
+            <option value="recommended">Recommended</option>
+            <option value="rating">Best rated</option>
+            <option value="name">Name A–Z</option>
+        </select>
+        <div class="filter-actions">
+            <button id="searchBtn" type="button">Search</button>
+            <button id="randomBtn" type="button">🎲 Surprise me</button>
+            <button id="clearFiltersBtn" class="secondary-button" type="button">Clear filters</button>
+        </div>
+    </div>
+
+    <p id="resultsSummary" class="results-summary" aria-live="polite"></p>
+
+    <div id="restaurantContainer"></div>
+
+    <p class="data-note">Venue names and details are from the existing Nibbl starter catalog and may need confirmation with the restaurant. Photos are only shown after they can be verified as belonging to that exact venue.</p>
+</section>
+
+<section class="favorites" id="favorites">
+    <span class="eyebrow">Your shortlist</span>
+    <h2>My favourites</h2>
+    <div class="favorites-header">
+        <button id="viewFavoritesBtn" type="button">♥ View favourites</button>
+    </div>
+    <div id="favoritesContainer"></div>
+</section>
+
+<section class="ratings" id="ratings">
+    <span class="eyebrow">Reviews</span>
+    <h2>Leave a little love</h2>
+    <p class="section-intro">Your honest review helps someone find their next favourite.</p>
+
+    <div class="split">
+        <form id="ratingForm">
+            <label for="reviewRestaurant">Restaurant</label>
+            <select id="reviewRestaurant" required="">
+                <option value="">Choose a restaurant</option>
+            </select>
+
+            <label for="reviewName">Your name</label>
+            <input type="text" id="reviewName" placeholder="Your name" maxlength="60" required="">
+
+            <div class="rating-row">
+                <div>
+                    <label for="foodRating">Food · /5</label>
+                    <input type="number" id="foodRating" placeholder="1–5" min="1" max="5" step="1" required="">
+                </div>
+                <div>
+                    <label for="ambienceRating">Ambience · /5</label>
+                    <input type="number" id="ambienceRating" placeholder="1–5" min="1" max="5" step="1" required="">
+                </div>
+                <div>
+                    <label for="overallRating">Overall · /5</label>
+                    <input type="number" id="overallRating" placeholder="1–5" min="1" max="5" step="1" required="">
+                </div>
+            </div>
+
+            <label for="review">Your review</label>
+            <textarea id="review" placeholder="What should someone know before they go?" maxlength="1200" required=""></textarea>
+
+            <button type="submit">Submit rating</button>
+        </form>
+
+        <div id="reviews"></div>
+    </div>
+</section>
+
+<section class="feedback" id="feedback">
+    <span class="eyebrow">Tell us everything</span>
+    <h2>Your feedback matters</h2>
+    <p class="section-intro">Help us improve your Nibbl experience.</p>
+
+    <div class="split">
+        <form id="feedbackForm">
+            <label for="feedbackName">Name</label>
+            <input type="text" id="feedbackName" placeholder="Your name" required="">
+            <label for="feedbackEmail">Email</label>
+            <input type="email" id="feedbackEmail" placeholder="you@example.com" required="">
+            <label for="feedbackRating">How was your Nibbl experience?</label>
+            <select id="feedbackRating" required="">
+                <option value="">Choose a rating</option>
+                <option value="5">Loved it · 5</option>
+                <option value="4">Really good · 4</option>
+                <option value="3">It was okay · 3</option>
+                <option value="2">Could be better · 2</option>
+                <option value="1">Not for me · 1</option>
+            </select>
+            <label for="feedbackText">Your feedback</label>
+            <textarea id="feedbackText" placeholder="Write your feedback about our website..." required=""></textarea>
+            <button type="submit">Submit feedback</button>
+        </form>
+
+        <div id="feedbackList"></div>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="about-card">
+        <span class="eyebrow">Our story</span>
+        <h2>About nibbl</h2>
+        <p>
+            nibbl helps you discover restaurants across Bangalore based on cuisine, location and ambience.
+            Whether you're looking for hidden gems, family restaurants or cafes, nibbl makes deciding where to eat simple.
+        </p>
+    </div>
+</section>
+
+<section id="contact">
+    <span class="eyebrow">Say hello</span>
+    <h2>Contact us</h2>
+    <p>Have suggestions? Email us at</p>
+    <a class="contact-email" href="mailto:group3.2025.26.27@gmail.com">group3.2025.26.27@gmail.com</a>
+</section>
+
+<footer>
+    <img class="footer-logo" src="nibbl_logo.png" alt="Nibbl">
+    <p>© 2026 Nibbl · Made with ❤️ in Bangalore</p>
+    <p class="footer-credits">Developers: Drisana Borah, Neeya Dwivedi, Prisha Sharma, Smritiprajyna SSJ and Saanvi Avasthi</p>
+</footer>
+
+<button id="backToTop" type="button" title="Go to top" aria-label="Back to top" class="">↑</button>
+
+<script src="restaurants.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
