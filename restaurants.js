@@ -8,7 +8,7 @@ const restaurants = [
     "ambience": "Cozy",
     "price": "₹₹",
     "rating": 8.6,
-    "image": "restaurant_data/images/RCB_Bar_and_Cafe.jpg",
+    "image": "restaurant_data/images/RCB_Bar_and_Cafe.jpeg",
     "maps": "https://www.google.com/maps/search/?api=1&query=RCB+Bar+and+Cafe+Ashok+Nagar+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=RCB+Bar+and+Cafe+Ashok+Nagar+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -34,7 +34,7 @@ const restaurants = [
     "ambience": "Casual",
     "price": "₹₹",
     "rating": 7.8,
-    "image": "restaurant_data/images/Mirage.jpg",
+    "image": "restaurant_data/images/Mirage.avif",
     "maps": "https://www.google.com/maps/search/?api=1&query=Mirage+Ashok+Nagar+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Mirage+Ashok+Nagar+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -60,7 +60,7 @@ const restaurants = [
     "ambience": "Romantic",
     "price": "₹₹",
     "rating": 9.4,
-    "image": "restaurant_data/images/Oia.jpg",
+    "image": "restaurant_data/images/Oia.avif",
     "maps": "https://www.google.com/maps/search/?api=1&query=Oia+Hebbal+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Oia+Hebbal+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -73,7 +73,7 @@ const restaurants = [
     "ambience": "Casual",
     "price": "₹₹",
     "rating": 9.0,
-    "image": "restaurant_data/images/Manheim.jpg",
+    "image": "restaurant_data/images/Manheim.avif",
     "maps": "https://www.google.com/maps/search/?api=1&query=Manheim+MG+Road+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Manheim+MG+Road+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -99,7 +99,7 @@ const restaurants = [
     "ambience": "Casual",
     "price": "₹₹",
     "rating": 9.2,
-    "image": "restaurant_data/images/Kico.jpg",
+    "image": "restaurant_data/images/Kico.jpeg",
     "maps": "https://www.google.com/maps/search/?api=1&query=Kico+Indiranagar+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Kico+Indiranagar+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -112,7 +112,7 @@ const restaurants = [
     "ambience": "Casual",
     "price": "₹₹",
     "rating": 8.2,
-    "image": "restaurant_data/images/Lumara.jpg",
+    "image": "restaurant_data/images/Lumara.avif",
     "maps": "https://www.google.com/maps/search/?api=1&query=Lumara+MG+Road+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Lumara+MG+Road+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -125,7 +125,7 @@ const restaurants = [
     "ambience": "Casual",
     "price": "₹₹",
     "rating": 8.6,
-    "image": "restaurant_data/images/Daddy.jpg",
+    "image": "restaurant_data/images/Daddy.avif",
     "maps": "https://www.google.com/maps/search/?api=1&query=Daddy+Indiranagar+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Daddy+Indiranagar+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -151,7 +151,7 @@ const restaurants = [
     "ambience": "Casual",
     "price": "₹₹",
     "rating": 8.6,
-    "image": "restaurant_data/images/Magnolia.jpg",
+    "image": "restaurant_data/images/Magnolia_Bakery.jpeg",
     "maps": "https://www.google.com/maps/search/?api=1&query=Magnolia+Indiranagar+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Magnolia+Indiranagar+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -177,7 +177,7 @@ const restaurants = [
     "ambience": "Casual",
     "price": "₹₹",
     "rating": 8.4,
-    "image": "restaurant_data/images/Mandarin.jpg",
+    "image": "restaurant_data/images/Mandarin.avif",
     "maps": "https://www.google.com/maps/search/?api=1&query=Mandarin+Indiranagar+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Mandarin+Indiranagar+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -190,7 +190,7 @@ const restaurants = [
     "ambience": "Casual",
     "price": "₹₹",
     "rating": 9.0,
-    "image": "restaurant_data/images/Smash_Guys.jpg",
+    "image": "restaurant_data/images/Smash_Guys.webp",
     "maps": "https://www.google.com/maps/search/?api=1&query=Smash+Guys+Indiranagar+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Smash+Guys+Indiranagar+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -216,7 +216,7 @@ const restaurants = [
     "ambience": "Casual",
     "price": "₹₹",
     "rating": 9.2,
-    "image": "restaurant_data/images/Lucky_Chan.jpg",
+    "image": "restaurant_data/images/Lucky_Chan.avif",
     "maps": "https://www.google.com/maps/search/?api=1&query=Lucky+Chan+Indiranagar+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Lucky+Chan+Indiranagar+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -229,7 +229,7 @@ const restaurants = [
     "ambience": "Casual",
     "price": "₹₹",
     "rating": 8.2,
-    "image": "restaurant_data/images/Koreyaki.jpg",
+    "image": "restaurant_data/images/Koreyaki.webp",
     "maps": "https://www.google.com/maps/search/?api=1&query=Koreyaki+Indiranagar+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Koreyaki+Indiranagar+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -255,7 +255,7 @@ const restaurants = [
     "ambience": "Casual",
     "price": "₹₹",
     "rating": 8.2,
-    "image": "restaurant_data/images/Fomomo.jpg",
+    "image": "restaurant_data/images/Fomomo.avif",
     "maps": "https://www.google.com/maps/search/?api=1&query=Fomomo+Indiranagar+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Fomomo+Indiranagar+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -294,7 +294,7 @@ const restaurants = [
     "ambience": "Casual",
     "price": "₹₹",
     "rating": 8.0,
-    "image": "restaurant_data/images/Brik_Oven.jpg",
+    "image": "restaurant_data/images/Brik_Oven.avif",
     "maps": "https://www.google.com/maps/search/?api=1&query=Brik+Oven+MG+Road+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Brik+Oven+MG+Road+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -307,7 +307,7 @@ const restaurants = [
     "ambience": "Casual",
     "price": "₹₹",
     "rating": 9.0,
-    "image": "restaurant_data/images/Magique.jpg",
+    "image": "restaurant_data/images/Magique.avif",
     "maps": "https://www.google.com/maps/search/?api=1&query=Magique+Indiranagar+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Magique+Indiranagar+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -320,7 +320,7 @@ const restaurants = [
     "ambience": "Casual",
     "price": "₹₹",
     "rating": 8.0,
-    "image": "restaurant_data/images/Tall_Oak.jpg",
+    "image": "restaurant_data/images/Tall_Oaks.jpg",
     "maps": "https://www.google.com/maps/search/?api=1&query=Tall+Oak+Indiranagar+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Tall+Oak+Indiranagar+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -333,7 +333,7 @@ const restaurants = [
     "ambience": "Casual",
     "price": "₹₹",
     "rating": 9.0,
-    "image": "restaurant_data/images/Yuki.jpg",
+    "image": "restaurant_data/images/Yuki.avif",
     "maps": "https://www.google.com/maps/search/?api=1&query=Yuki+Indiranagar+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Yuki+Indiranagar+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -359,7 +359,7 @@ const restaurants = [
     "ambience": "Casual",
     "price": "₹₹",
     "rating": 8.0,
-    "image": "restaurant_data/images/Papa_Johns.jpg",
+    "image": "restaurant_data/images/Papa_Johns.png",
     "maps": "https://www.google.com/maps/search/?api=1&query=Papa+Johns+Bangalore+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Papa+Johns+Bangalore+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -450,7 +450,7 @@ const restaurants = [
     "ambience": "Casual",
     "price": "₹",
     "rating": 7.0,
-    "image": "restaurant_data/images/Kake_Di_Hatti.jpg",
+    "image": "restaurant_data/images/Kake_Di_Hatti.png",
     "maps": "https://www.google.com/maps/search/?api=1&query=Kake+Di+Hatti+Indiranagar+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Kake+Di+Hatti+Indiranagar+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -489,7 +489,7 @@ const restaurants = [
     "ambience": "Family",
     "price": "₹₹",
     "rating": 8.0,
-    "image": "restaurant_data/images/Chulha_Chauki_Da_Dhaba.jpg",
+    "image": "restaurant_data/images/Chulha_Chauki_Da_Dhaba.jpeg",
     "maps": "https://www.google.com/maps/search/?api=1&query=Chulha+Chauki+Da+Dhaba+Hebbal+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Chulha+Chauki+Da+Dhaba+Hebbal+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -515,7 +515,7 @@ const restaurants = [
     "ambience": "Luxury",
     "price": "₹₹₹",
     "rating": 9.0,
-    "image": "restaurant_data/images/Punjab_Grill.jpg",
+    "image": "restaurant_data/images/Punjab_Grill.jpeg",
     "maps": "https://www.google.com/maps/search/?api=1&query=Punjab+Grill+Rajajinagar+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Punjab+Grill+Rajajinagar+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -567,7 +567,7 @@ const restaurants = [
     "ambience": "Brewery",
     "price": "₹₹",
     "rating": 9.0,
-    "image": "restaurant_data/images/Artisanal_Bier_Village.jpg",
+    "image": "restaurant_data/images/Artisanal_Bier_Village.png",
     "maps": "https://www.google.com/maps/search/?api=1&query=Artisanal+Bier+Village+Whitefield+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Artisanal+Bier+Village+Whitefield+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -944,7 +944,7 @@ const restaurants = [
     "ambience": "Casual",
     "price": "₹₹",
     "rating": 8.0,
-    "image": "restaurant_data/images/Rumi.jpg",
+    "image": "restaurant_data/images/Rumi.avif",
     "maps": "https://www.google.com/maps/search/?api=1&query=Rumi+Indiranagar+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Rumi+Indiranagar+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -1074,7 +1074,7 @@ const restaurants = [
     "ambience": "Casual",
     "price": "₹₹",
     "rating": 9.4,
-    "image": "restaurant_data/images/Paris_Panini.jpg",
+    "image": "restaurant_data/images/Paris_Panini.png",
     "maps": "https://www.google.com/maps/search/?api=1&query=Paris+Panini+Indiranagar+Bengaluru",
     "photo_verified": true,
     "maps_embed": "https://maps.google.com/maps?q=Paris+Panini+Indiranagar+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed"
